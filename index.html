@@ -1,0 +1,2268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="A smarter student portal for discovering courses, registering for exams, accessing academic resources, and managing your academic journey."
+    >
+
+    <meta
+        name="theme-color"
+        content="#071426"
+    >
+
+    <title>StudentHub — Your Academic Journey, Simplified</title>
+
+    <!-- Google Material Symbols -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,300..700,0..1,0&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Landing page styles -->
+    <link
+        rel="stylesheet"
+        href="css/landing.css"
+    >
+</head>
+
+<body>
+
+    <!-- =====================================================
+         TOP BAR
+         ===================================================== -->
+
+    <div class="topbar">
+        <div class="container topbar-inner">
+
+            <div class="topbar-message">
+                <span class="material-symbols-rounded">
+                    campaign
+                </span>
+
+                <span>
+                    Registration for the new academic session is now open.
+                </span>
+            </div>
+
+            <a
+                href="#exams"
+                class="topbar-link"
+            >
+                View important dates
+            </a>
+
+        </div>
+    </div>
+
+
+    <!-- =====================================================
+         NAVIGATION
+         ===================================================== -->
+
+    <header class="site-header">
+
+        <div class="container navbar">
+
+            <a
+                href="#home"
+                class="brand"
+                aria-label="StudentHub home"
+            >
+                <span class="brand-mark">
+                    <span class="material-symbols-rounded">
+                        school
+                    </span>
+                </span>
+
+                <span class="brand-text">
+                    Student<span>Hub</span>
+                </span>
+            </a>
+
+
+            <nav
+                class="nav-links"
+                aria-label="Main navigation"
+            >
+
+                <a
+                    href="#home"
+                    class="nav-link active"
+                >
+                    Home
+                </a>
+
+                <a
+                    href="#courses"
+                    class="nav-link"
+                >
+                    Courses
+                </a>
+
+                <a
+                    href="#exams"
+                    class="nav-link"
+                >
+                    Exams
+                </a>
+
+                <a
+                    href="#resources"
+                    class="nav-link"
+                >
+                    Resources
+                </a>
+
+                <a
+                    href="#how-it-works"
+                    class="nav-link"
+                >
+                    How it works
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <a
+                    href="#login"
+                    class="btn btn-outline btn-sm"
+                >
+                    Log in
+                </a>
+
+                <a
+                    href="#register"
+                    class="btn btn-green btn-sm"
+                >
+                    Get started
+                    <span class="material-symbols-rounded">
+                        arrow_forward
+                    </span>
+                </a>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="mobile-menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <span class="material-symbols-rounded">
+                    menu
+                </span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =================================================
+             HERO
+             ================================================= -->
+
+        <section
+            id="home"
+            class="hero"
+        >
+
+            <div class="container hero-inner">
+
+
+                <div
+                    class="hero-copy"
+                    data-reveal
+                >
+
+                    <div class="hero-badge">
+
+                        <span class="hero-badge-dot"></span>
+
+                        <span>
+                            Everything students need, in one place
+                        </span>
+
+                    </div>
+
+
+                    <h1 class="hero-title">
+
+                        Your academic
+                        journey,
+
+                        <span class="accent">
+                            simplified.
+                        </span>
+
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        Discover available courses, register for
+                        examinations, find study resources, and
+                        stay on top of your academic life from one
+                        simple student portal.
+
+                    </p>
+
+
+                    <div class="hero-actions">
+
+                        <a
+                            href="#courses"
+                            class="btn btn-green"
+                        >
+
+                            <span class="material-symbols-rounded">
+                                search
+                            </span>
+
+                            Find a course
+
+                        </a>
+
+
+                        <a
+                            href="#exams"
+                            class="btn btn-light"
+                        >
+
+                            <span class="material-symbols-rounded">
+                                assignment
+                            </span>
+
+                            Register for exams
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero-meta">
+
+                        <div class="hero-meta-item">
+
+                            <span class="material-symbols-rounded">
+                                verified
+                            </span>
+
+                            <span>
+                                Secure student access
+                            </span>
+
+                        </div>
+
+
+                        <div class="hero-meta-item">
+
+                            <span class="material-symbols-rounded">
+                                update
+                            </span>
+
+                            <span>
+                                Always up to date
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HERO SEARCH PANEL -->
+
+                <div
+                    class="hero-panel-wrap"
+                    data-reveal="right"
+                >
+
+                    <div class="hero-panel">
+
+                        <div class="panel-top">
+
+                            <h2 class="panel-title">
+                                Find your next course
+                            </h2>
+
+                            <span class="panel-status">
+                                Live catalogue
+                            </span>
+
+                        </div>
+
+
+                        <div class="hero-search">
+
+                            <span class="material-symbols-rounded">
+                                search
+                            </span>
+
+                            <input
+                                type="search"
+                                data-course-search
+                                placeholder="Search courses..."
+                                aria-label="Search courses"
+                                autocomplete="off"
+                            >
+
+                            <button
+                                type="button"
+                                data-search-button
+                                aria-label="Search courses"
+                            >
+                                <span class="material-symbols-rounded">
+                                    arrow_forward
+                                </span>
+                            </button>
+
+                        </div>
+
+
+                        <span class="hero-panel-label">
+                            Popular courses
+                        </span>
+
+
+                        <div class="hero-course-list">
+
+
+                            <a
+                                href="#courses"
+                                class="hero-course"
+                            >
+
+                                <span class="hero-course-icon">
+                                    <span class="material-symbols-rounded">
+                                        code
+                                    </span>
+                                </span>
+
+                                <span class="hero-course-info">
+
+                                    <span class="hero-course-name">
+                                        Computer Science
+                                    </span>
+
+                                    <span class="hero-course-meta">
+                                        Technology · Undergraduate
+                                    </span>
+
+                                </span>
+
+                                <span class="material-symbols-rounded hero-course-arrow">
+                                    chevron_right
+                                </span>
+
+                            </a>
+
+
+                            <a
+                                href="#courses"
+                                class="hero-course"
+                            >
+
+                                <span class="hero-course-icon">
+                                    <span class="material-symbols-rounded">
+                                        account_balance
+                                    </span>
+                                </span>
+
+                                <span class="hero-course-info">
+
+                                    <span class="hero-course-name">
+                                        Business Administration
+                                    </span>
+
+                                    <span class="hero-course-meta">
+                                        Business · Undergraduate
+                                    </span>
+
+                                </span>
+
+                                <span class="material-symbols-rounded hero-course-arrow">
+                                    chevron_right
+                                </span>
+
+                            </a>
+
+
+                            <a
+                                href="#courses"
+                                class="hero-course"
+                            >
+
+                                <span class="hero-course-icon">
+                                    <span class="material-symbols-rounded">
+                                        biotech
+                                    </span>
+                                </span>
+
+                                <span class="hero-course-info">
+
+                                    <span class="hero-course-name">
+                                        Biochemistry
+                                    </span>
+
+                                    <span class="hero-course-meta">
+                                        Science · Undergraduate
+                                    </span>
+
+                                </span>
+
+                                <span class="material-symbols-rounded hero-course-arrow">
+                                    chevron_right
+                                </span>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             TRUST / STATS
+             ================================================= -->
+
+        <section class="trust-strip">
+
+            <div class="container">
+
+                <div class="trust-card">
+
+                    <div class="trust-item">
+
+                        <span class="trust-icon">
+                            <span class="material-symbols-rounded">
+                                groups
+                            </span>
+                        </span>
+
+                        <div>
+                            <p class="trust-value">12K+</p>
+                            <p class="trust-label">
+                                Active students
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="trust-item">
+
+                        <span class="trust-icon">
+                            <span class="material-symbols-rounded">
+                                menu_book
+                            </span>
+                        </span>
+
+                        <div>
+                            <p class="trust-value">240+</p>
+                            <p class="trust-label">
+                                Available courses
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="trust-item">
+
+                        <span class="trust-icon">
+                            <span class="material-symbols-rounded">
+                                event_available
+                            </span>
+                        </span>
+
+                        <div>
+                            <p class="trust-value">98%</p>
+                            <p class="trust-label">
+                                Registration success
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="trust-item">
+
+                        <span class="trust-icon">
+                            <span class="material-symbols-rounded">
+                                support_agent
+                            </span>
+                        </span>
+
+                        <div>
+                            <p class="trust-value">24/7</p>
+                            <p class="trust-label">
+                                Student support
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             QUICK ACTIONS
+             ================================================= -->
+
+        <section class="section quick-section">
+
+            <div class="container">
+
+                <div
+                    class="section-header"
+                    data-reveal
+                >
+
+                    <span class="section-eyebrow">
+                        Student tools
+                    </span>
+
+                    <h2 class="section-title">
+                        Everything you need to stay ahead.
+                    </h2>
+
+                    <p class="section-description">
+                        Access the most important academic services
+                        without jumping between different systems.
+                    </p>
+
+                </div>
+
+
+                <div class="quick-grid">
+
+
+                    <a
+                        href="#courses"
+                        class="quick-card"
+                        data-reveal
+                    >
+
+                        <span class="quick-icon">
+                            <span class="material-symbols-rounded">
+                                search
+                            </span>
+                        </span>
+
+                        <span class="quick-arrow material-symbols-rounded">
+                            arrow_outward
+                        </span>
+
+                        <h3 class="quick-title">
+                            Find Courses
+                        </h3>
+
+                        <p class="quick-description">
+                            Search available courses and discover
+                            programmes that match your academic goals.
+                        </p>
+
+                    </a>
+
+
+                    <a
+                        href="#exams"
+                        class="quick-card"
+                        data-reveal
+                    >
+
+                        <span class="quick-icon">
+                            <span class="material-symbols-rounded">
+                                edit_document
+                            </span>
+                        </span>
+
+                        <span class="quick-arrow material-symbols-rounded">
+                            arrow_outward
+                        </span>
+
+                        <h3 class="quick-title">
+                            Exam Registration
+                        </h3>
+
+                        <p class="quick-description">
+                            Register for upcoming examinations before
+                            registration deadlines.
+                        </p>
+
+                    </a>
+
+
+                    <a
+                        href="#resources"
+                        class="quick-card"
+                        data-reveal
+                    >
+
+                        <span class="quick-icon">
+                            <span class="material-symbols-rounded">
+                                library_books
+                            </span>
+                        </span>
+
+                        <span class="quick-arrow material-symbols-rounded">
+                            arrow_outward
+                        </span>
+
+                        <h3 class="quick-title">
+                            Study Resources
+                        </h3>
+
+                        <p class="quick-description">
+                            Find lecture materials, past questions,
+                            guides, and useful academic resources.
+                        </p>
+
+                    </a>
+
+
+                    <a
+                        href="#calendar"
+                        class="quick-card"
+                        data-reveal
+                    >
+
+                        <span class="quick-icon">
+                            <span class="material-symbols-rounded">
+                                calendar_month
+                            </span>
+                        </span>
+
+                        <span class="quick-arrow material-symbols-rounded">
+                            arrow_outward
+                        </span>
+
+                        <h3 class="quick-title">
+                            Academic Calendar
+                        </h3>
+
+                        <p class="quick-description">
+                            Keep track of important dates, deadlines,
+                            semesters, and academic activities.
+                        </p>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             COURSES
+             ================================================= -->
+
+        <section
+            id="courses"
+            class="section courses-section"
+        >
+
+            <div class="container">
+
+
+                <div
+                    class="section-header-row"
+                    data-reveal
+                >
+
+                    <div class="section-header">
+
+                        <span class="section-eyebrow">
+                            Course catalogue
+                        </span>
+
+                        <h2 class="section-title">
+                            Explore available courses.
+                        </h2>
+
+                        <p class="section-description">
+                            Browse popular programmes and discover
+                            where your next academic opportunity could
+                            take you.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="#all-courses"
+                        class="text-link"
+                    >
+                        View all courses
+
+                        <span class="material-symbols-rounded">
+                            arrow_forward
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <div class="course-filters">
+
+                    <button
+                        type="button"
+                        class="filter-btn active"
+                        data-course-filter="all"
+                    >
+                        All courses
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filter-btn"
+                        data-course-filter="technology"
+                    >
+                        Technology
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filter-btn"
+                        data-course-filter="business"
+                    >
+                        Business
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filter-btn"
+                        data-course-filter="science"
+                    >
+                        Science
+                    </button>
+
+                </div>
+
+
+                <div class="course-grid">
+
+
+                    <article
+                        class="course-card"
+                        data-course-card
+                        data-category="technology"
+                        data-reveal
+                    >
+
+                        <div class="course-top">
+
+                            <span class="course-level">
+                                Undergraduate
+                            </span>
+
+                            <span class="material-symbols-rounded">
+                                code
+                            </span>
+
+                        </div>
+
+                        <div class="course-body">
+
+                            <p class="course-department">
+                                Technology
+                            </p>
+
+                            <h3 class="course-title">
+                                Computer Science
+                            </h3>
+
+                            <p class="course-description">
+                                Build a strong foundation in computing,
+                                software development, algorithms, and
+                                modern technology.
+                            </p>
+
+                            <div class="course-meta">
+
+                                <span class="course-meta-item">
+                                    <span class="material-symbols-rounded">
+                                        schedule
+                                    </span>
+                                    4 years
+                                </span>
+
+                                <span class="course-meta-item">
+                                    <span class="material-symbols-rounded">
+                                        group
+                                    </span>
+                                    120 seats
+                                </span>
+
+                            </div>
+
+                            <div class="course-footer">
+
+                                <span class="course-meta-item">
+                                    <span class="material-symbols-rounded">
+                                        check_circle
+                                    </span>
+                                    Available
+                                </span>
+
+                                <a
+                                    href="#register"
+                                    class="btn btn-primary btn-sm"
+                                >
+                                    View course
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="course-card"
+                        data-course-card
+                        data-category="business"
+                        data-reveal
+                    >
+
+                        <div class="course-top">
+
+                            <span class="course-level">
+                                Undergraduate
+                            </span>
+
+                            <span class="material-symbols-rounded">
+                                account_balance
+                            </span>
+
+                        </div>
+
+                        <div class="course-body">
+
+                            <p class="course-department">
+                                Business
+                            </p>
+
+                            <h3 class="course-title">
+                                Business Administration
+                            </h3>
+
+                            <p class="course-description">
+                                Learn management, finance, strategy,
+                                entrepreneurship, and modern business
+                                operations.
+                            </p>
+
+                            <div class="course-meta">
+
+                                <span class="course-meta-item">
+                                    <span class="material-symbols-rounded">
+                                        schedule
+                                    </span>
+                                    4 years
+                                </span>
+
+                                <span class="course-meta-item">
+                                    <span class="material-symbols-rounded">
+                                        group
+                                    </span>
+                                    180 seats
+                                </span>
+
+                            </div>
+
+                            <div class="course-footer">
+
+                                <span class="course-meta-item">
+                                    <span class="material-symbols-rounded">
+                                        check_circle
+                                    </span>
+                                    Available
+                                </span>
+
+                                <a
+                                    href="#register"
+                                    class="btn btn-primary btn-sm"
+                                >
+                                    View course
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="course-card"
+                        data-course-card
+                        data-category="science"
+                        data-reveal
+                    >
+
+                        <div class="course-top">
+
+                            <span class="course-level">
+                                Undergraduate
+                            </span>
+
+                            <span class="material-symbols-rounded">
+                                biotech
+                            </span>
+
+                        </div>
+
+                        <div class="course-body">
+
+                            <p class="course-department">
+                                Science
+                            </p>
+
+                            <h3 class="course-title">
+                                Biochemistry
+                            </h3>
+
+                            <p class="course-description">
+                                Explore biological processes through
+                                chemistry, laboratory science, and
+                                molecular research.
+                            </p>
+
+                            <div class="course-meta">
+
+                                <span class="course-meta-item">
+                                    <span class="material-symbols-rounded">
+                                        schedule
+                                    </span>
+                                    4 years
+                                </span>
+
+                                <span class="course-meta-item">
+                                    <span class="material-symbols-rounded">
+                                        group
+                                    </span>
+                                    90 seats
+                                </span>
+
+                            </div>
+
+                            <div class="course-footer">
+
+                                <span class="course-meta-item">
+                                    <span class="material-symbols-rounded">
+                                        check_circle
+                                    </span>
+                                    Available
+                                </span>
+
+                                <a
+                                    href="#register"
+                                    class="btn btn-primary btn-sm"
+                                >
+                                    View course
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="course-card"
+                        data-course-card
+                        data-category="technology"
+                        data-reveal
+                    >
+
+                        <div class="course-top">
+
+                            <span class="course-level">
+                                Undergraduate
+                            </span>
+
+                            <span class="material-symbols-rounded">
+                                engineering
+                            </span>
+
+                        </div>
+
+                        <div class="course-body">
+
+                            <p class="course-department">
+                                Engineering
+                            </p>
+
+                            <h3 class="course-title">
+                                Computer Engineering
+                            </h3>
+
+                            <p class="course-description">
+                                Combine hardware and software engineering
+                                to design intelligent computing systems.
+                            </p>
+
+                            <div class="course-meta">
+
+                                <span class="course-meta-item">
+                                    <span class="material-symbols-rounded">
+                                        schedule
+                                    </span>
+                                    5 years
+                                </span>
+
+                                <span class="course-meta-item">
+                                    <span class="material-symbols-rounded">
+                                        group
+                                    </span>
+                                    80 seats
+                                </span>
+
+                            </div>
+
+                            <div class="course-footer">
+
+                                <span class="course-meta-item">
+                                    <span class="material-symbols-rounded">
+                                        check_circle
+                                    </span>
+                                    Available
+                                </span>
+
+                                <a
+                                    href="#register"
+                                    class="btn btn-primary btn-sm"
+                                >
+                                    View course
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="course-card"
+                        data-course-card
+                        data-category="business"
+                        data-reveal
+                    >
+
+                        <div class="course-top">
+
+                            <span class="course-level">
+                                Undergraduate
+                            </span>
+
+                            <span class="material-symbols-rounded">
+                                payments
+                            </span>
+
+                        </div>
+
+                        <div class="course-body">
+
+                            <p class="course-department">
+                                Finance
+                            </p>
+
+                            <h3 class="course-title">
+                                Accounting
+                            </h3>
+
+                            <p class="course-description">
+                                Develop practical skills in accounting,
+                                financial reporting, auditing, and
+                                business analysis.
+                            </p>
+
+                            <div class="course-meta">
+
+                                <span class="course-meta-item">
+                                    <span class="material-symbols-rounded">
+                                        schedule
+                                    </span>
+                                    4 years
+                                </span>
+
+                                <span class="course-meta-item">
+                                    <span class="material-symbols-rounded">
+                                        group
+                                    </span>
+                                    150 seats
+                                </span>
+
+                            </div>
+
+                            <div class="course-footer">
+
+                                <span class="course-meta-item">
+                                    <span class="material-symbols-rounded">
+                                        check_circle
+                                    </span>
+                                    Available
+                                </span>
+
+                                <a
+                                    href="#register"
+                                    class="btn btn-primary btn-sm"
+                                >
+                                    View course
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="course-card"
+                        data-course-card
+                        data-category="science"
+                        data-reveal
+                    >
+
+                        <div class="course-top">
+
+                            <span class="course-level">
+                                Undergraduate
+                            </span>
+
+                            <span class="material-symbols-rounded">
+                                psychology
+                            </span>
+
+                        </div>
+
+                        <div class="course-body">
+
+                            <p class="course-department">
+                                Science
+                            </p>
+
+                            <h3 class="course-title">
+                                Psychology
+                            </h3>
+
+                            <p class="course-description">
+                                Understand human behaviour, cognition,
+                                development, and the science behind
+                                decision-making.
+                            </p>
+
+                            <div class="course-meta">
+
+                                <span class="course-meta-item">
+                                    <span class="material-symbols-rounded">
+                                        schedule
+                                    </span>
+                                    4 years
+                                </span>
+
+                                <span class="course-meta-item">
+                                    <span class="material-symbols-rounded">
+                                        group
+                                    </span>
+                                    100 seats
+                                </span>
+
+                            </div>
+
+                            <div class="course-footer">
+
+                                <span class="course-meta-item">
+                                    <span class="material-symbols-rounded">
+                                        check_circle
+                                    </span>
+                                    Available
+                                </span>
+
+                                <a
+                                    href="#register"
+                                    class="btn btn-primary btn-sm"
+                                >
+                                    View course
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             EXAMS
+             ================================================= -->
+
+        <section
+            id="exams"
+            class="section exam-section"
+        >
+
+            <div class="container">
+
+                <div
+                    class="exam-layout"
+                    data-reveal
+                >
+
+
+                    <div class="exam-feature">
+
+                        <span class="exam-feature-icon">
+                            <span class="material-symbols-rounded">
+                                assignment_turned_in
+                            </span>
+                        </span>
+
+                        <h2 class="exam-feature-title">
+                            Never miss an examination deadline.
+                        </h2>
+
+                        <p class="exam-feature-description">
+                            See upcoming examinations, registration
+                            windows, and important academic dates in
+                            one clear view.
+                        </p>
+
+                        <a
+                            href="#register"
+                            class="btn btn-green"
+                        >
+                            Register for an exam
+
+                            <span class="material-symbols-rounded">
+                                arrow_forward
+                            </span>
+                        </a>
+
+                    </div>
+
+
+                    <div class="exam-list">
+
+
+                        <article class="exam-item">
+
+                            <div class="exam-date">
+
+                                <span class="exam-month">
+                                    Sep
+                                </span>
+
+                                <span class="exam-day">
+                                    08
+                                </span>
+
+                            </div>
+
+                            <div>
+
+                                <h3 class="exam-name">
+                                    First Semester Examination
+                                </h3>
+
+                                <div class="exam-details">
+
+                                    <span class="exam-detail">
+                                        <span class="material-symbols-rounded">
+                                            school
+                                        </span>
+                                        Undergraduate
+                                    </span>
+
+                                    <span class="exam-detail">
+                                        <span class="material-symbols-rounded">
+                                            schedule
+                                        </span>
+                                        Registration closes Sep 03
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <a
+                                href="#register"
+                                class="btn btn-primary btn-sm"
+                            >
+                                Register
+                            </a>
+
+                        </article>
+
+
+                        <article class="exam-item">
+
+                            <div class="exam-date">
+
+                                <span class="exam-month">
+                                    Sep
+                                </span>
+
+                                <span class="exam-day">
+                                    15
+                                </span>
+
+                            </div>
+
+                            <div>
+
+                                <h3 class="exam-name">
+                                    Faculty of Science Examination
+                                </h3>
+
+                                <div class="exam-details">
+
+                                    <span class="exam-detail">
+                                        <span class="material-symbols-rounded">
+                                            science
+                                        </span>
+                                        Science Faculty
+                                    </span>
+
+                                    <span class="exam-detail">
+                                        <span class="material-symbols-rounded">
+                                            schedule
+                                        </span>
+                                        Registration closes Sep 10
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <a
+                                href="#register"
+                                class="btn btn-primary btn-sm"
+                            >
+                                Register
+                            </a>
+
+                        </article>
+
+
+                        <article class="exam-item">
+
+                            <div class="exam-date">
+
+                                <span class="exam-month">
+                                    Oct
+                                </span>
+
+                                <span class="exam-day">
+                                    02
+                                </span>
+
+                            </div>
+
+                            <div>
+
+                                <h3 class="exam-name">
+                                    Professional Certification Exam
+                                </h3>
+
+                                <div class="exam-details">
+
+                                    <span class="exam-detail">
+                                        <span class="material-symbols-rounded">
+                                            workspace_premium
+                                        </span>
+                                        Certification
+                                    </span>
+
+                                    <span class="exam-detail">
+                                        <span class="material-symbols-rounded">
+                                            schedule
+                                        </span>
+                                        Registration closes Sep 26
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <a
+                                href="#register"
+                                class="btn btn-primary btn-sm"
+                            >
+                                Register
+                            </a>
+
+                        </article>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             RESOURCES
+             ================================================= -->
+
+        <section
+            id="resources"
+            class="section resources-section"
+        >
+
+            <div class="container">
+
+
+                <div
+                    class="section-header"
+                    data-reveal
+                >
+
+                    <span class="section-eyebrow">
+                        Academic resources
+                    </span>
+
+                    <h2 class="section-title">
+                        Study smarter, not harder.
+                    </h2>
+
+                    <p class="section-description">
+                        Get quick access to the materials and
+                        information that help you prepare and perform.
+                    </p>
+
+                </div>
+
+
+                <div class="resources-grid">
+
+
+                    <a
+                        href="#past-questions"
+                        class="resource-card"
+                        data-reveal
+                    >
+
+                        <span class="resource-icon">
+                            <span class="material-symbols-rounded">
+                                history_edu
+                            </span>
+                        </span>
+
+                        <h3 class="resource-title">
+                            Past Questions
+                        </h3>
+
+                        <p class="resource-description">
+                            Prepare with previous examination questions
+                            and improve your confidence before exams.
+                        </p>
+
+                        <span class="resource-link">
+                            Explore resources
+
+                            <span class="material-symbols-rounded">
+                                arrow_forward
+                            </span>
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#materials"
+                        class="resource-card"
+                        data-reveal
+                    >
+
+                        <span class="resource-icon">
+                            <span class="material-symbols-rounded">
+                                auto_stories
+                            </span>
+                        </span>
+
+                        <h3 class="resource-title">
+                            Lecture Materials
+                        </h3>
+
+                        <p class="resource-description">
+                            Access course notes, lecture slides, and
+                            other materials shared for your programme.
+                        </p>
+
+                        <span class="resource-link">
+                            Browse materials
+
+                            <span class="material-symbols-rounded">
+                                arrow_forward
+                            </span>
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#academic-documents"
+                        class="resource-card"
+                        data-reveal
+                    >
+
+                        <span class="resource-icon">
+                            <span class="material-symbols-rounded">
+                                description
+                            </span>
+                        </span>
+
+                        <h3 class="resource-title">
+                            Academic Documents
+                        </h3>
+
+                        <p class="resource-description">
+                            Keep important academic documents and
+                            information accessible when you need them.
+                        </p>
+
+                        <span class="resource-link">
+                            View documents
+
+                            <span class="material-symbols-rounded">
+                                arrow_forward
+                            </span>
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#results"
+                        class="resource-card"
+                        data-reveal
+                    >
+
+                        <span class="resource-icon">
+                            <span class="material-symbols-rounded">
+                                monitoring
+                            </span>
+                        </span>
+
+                        <h3 class="resource-title">
+                            Results
+                        </h3>
+
+                        <p class="resource-description">
+                            Check your academic results and monitor
+                            your progress throughout your programme.
+                        </p>
+
+                        <span class="resource-link">
+                            Check results
+
+                            <span class="material-symbols-rounded">
+                                arrow_forward
+                            </span>
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#calendar"
+                        class="resource-card"
+                        data-reveal
+                    >
+
+                        <span class="resource-icon">
+                            <span class="material-symbols-rounded">
+                                event
+                            </span>
+                        </span>
+
+                        <h3 class="resource-title">
+                            Academic Calendar
+                        </h3>
+
+                        <p class="resource-description">
+                            Stay informed about semesters, lectures,
+                            examinations, holidays, and deadlines.
+                        </p>
+
+                        <span class="resource-link">
+                            View calendar
+
+                            <span class="material-symbols-rounded">
+                                arrow_forward
+                            </span>
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#support"
+                        class="resource-card"
+                        data-reveal
+                    >
+
+                        <span class="resource-icon">
+                            <span class="material-symbols-rounded">
+                                support_agent
+                            </span>
+                        </span>
+
+                        <h3 class="resource-title">
+                            Student Support
+                        </h3>
+
+                        <p class="resource-description">
+                            Need help? Find answers and contact student
+                            support when you need assistance.
+                        </p>
+
+                        <span class="resource-link">
+                            Get help
+
+                            <span class="material-symbols-rounded">
+                                arrow_forward
+                            </span>
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             HOW IT WORKS
+             ================================================= -->
+
+        <section
+            id="how-it-works"
+            class="section steps-section"
+        >
+
+            <div class="container">
+
+
+                <div
+                    class="section-header"
+                    data-reveal
+                >
+
+                    <span class="section-eyebrow">
+                        Simple process
+                    </span>
+
+                    <h2 class="section-title">
+                        Get things done in four steps.
+                    </h2>
+
+                    <p class="section-description">
+                        From finding the right course to completing
+                        your registration, everything is designed to
+                        be straightforward.
+                    </p>
+
+                </div>
+
+
+                <div class="steps-grid">
+
+
+                    <div
+                        class="step"
+                        data-reveal
+                    >
+
+                        <span class="step-number">
+                            01
+                        </span>
+
+                        <h3 class="step-title">
+                            Search
+                        </h3>
+
+                        <p class="step-description">
+                            Find courses, examinations, and academic
+                            resources using the search tools.
+                        </p>
+
+                    </div>
+
+
+                    <div
+                        class="step"
+                        data-reveal
+                    >
+
+                        <span class="step-number">
+                            02
+                        </span>
+
+                        <h3 class="step-title">
+                            Select
+                        </h3>
+
+                        <p class="step-description">
+                            Review the available information and
+                            choose what you need.
+                        </p>
+
+                    </div>
+
+
+                    <div
+                        class="step"
+                        data-reveal
+                    >
+
+                        <span class="step-number">
+                            03
+                        </span>
+
+                        <h3 class="step-title">
+                            Register
+                        </h3>
+
+                        <p class="step-description">
+                            Complete your registration securely and
+                            receive confirmation.
+                        </p>
+
+                    </div>
+
+
+                    <div
+                        class="step"
+                        data-reveal
+                    >
+
+                        <span class="step-number">
+                            04
+                        </span>
+
+                        <h3 class="step-title">
+                            Stay updated
+                        </h3>
+
+                        <p class="step-description">
+                            Track deadlines, examinations, results,
+                            and important academic announcements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             TESTIMONIALS
+             ================================================= -->
+
+        <section class="section testimonials-section">
+
+            <div class="container">
+
+
+                <div
+                    class="section-header"
+                    data-reveal
+                >
+
+                    <span class="section-eyebrow">
+                        Student experience
+                    </span>
+
+                    <h2 class="section-title">
+                        Built around students.
+                    </h2>
+
+                    <p class="section-description">
+                        A simpler academic experience means less time
+                        searching and more time focusing on your goals.
+                    </p>
+
+                </div>
+
+
+                <div class="testimonials-grid">
+
+
+                    <article
+                        class="testimonial"
+                        data-reveal
+                    >
+
+                        <span class="material-symbols-rounded quote-icon">
+                            format_quote
+                        </span>
+
+                        <p class="testimonial-text">
+                            “I can find the courses I need and check
+                            registration information without going
+                            through several different pages.”
+                        </p>
+
+                        <div class="testimonial-user">
+
+                            <span class="avatar">
+                                AM
+                            </span>
+
+                            <div>
+
+                                <p class="user-name">
+                                    Alex Morgan
+                                </p>
+
+                                <p class="user-role">
+                                    Computer Science student
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="testimonial"
+                        data-reveal
+                    >
+
+                        <span class="material-symbols-rounded quote-icon">
+                            format_quote
+                        </span>
+
+                        <p class="testimonial-text">
+                            “The exam registration reminders make it
+                            much easier to keep track of important
+                            deadlines during a busy semester.”
+                        </p>
+
+                        <div class="testimonial-user">
+
+                            <span class="avatar">
+                                JO
+                            </span>
+
+                            <div>
+
+                                <p class="user-name">
+                                    Jordan Okafor
+                                </p>
+
+                                <p class="user-role">
+                                    Business Administration
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="testimonial"
+                        data-reveal
+                    >
+
+                        <span class="material-symbols-rounded quote-icon">
+                            format_quote
+                        </span>
+
+                        <p class="testimonial-text">
+                            “Having study resources and academic
+                            information in one place saves a lot of
+                            time when preparing for exams.”
+                        </p>
+
+                        <div class="testimonial-user">
+
+                            <span class="avatar">
+                                SA
+                            </span>
+
+                            <div>
+
+                                <p class="user-name">
+                                    Sarah Adams
+                                </p>
+
+                                <p class="user-role">
+                                    Biochemistry student
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FINAL CTA
+             ================================================= -->
+
+        <section
+            id="register"
+            class="cta-section"
+        >
+
+            <div class="container">
+
+                <div
+                    class="cta-card"
+                    data-reveal
+                >
+
+                    <div class="cta-content">
+
+                        <h2 class="cta-title">
+                            Ready to take control of your academic journey?
+                        </h2>
+
+                        <p class="cta-description">
+                            Create your student account and get access
+                            to courses, exam registration, resources,
+                            academic updates, and more.
+                        </p>
+
+                        <div class="hero-actions">
+
+                            <a
+                                href="#signup"
+                                class="btn btn-green"
+                            >
+                                Create student account
+
+                                <span class="material-symbols-rounded">
+                                    arrow_forward
+                                </span>
+                            </a>
+
+                            <a
+                                href="#login"
+                                class="btn btn-light"
+                            >
+                                I already have an account
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+
+            <div class="footer-grid">
+
+
+                <div class="footer-brand">
+
+                    <a
+                        href="#home"
+                        class="brand"
+                    >
+
+                        <span class="brand-mark">
+                            <span class="material-symbols-rounded">
+                                school
+                            </span>
+                        </span>
+
+                        <span class="brand-text">
+                            Student<span>Hub</span>
+                        </span>
+
+                    </a>
+
+                    <p class="footer-description">
+                        A modern student portal designed to make
+                        academic services easier to discover, access,
+                        and manage.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h3 class="footer-heading">
+                        Student
+                    </h3>
+
+                    <div class="footer-links">
+
+                        <a
+                            href="#courses"
+                            class="footer-link"
+                        >
+                            Courses
+                        </a>
+
+                        <a
+                            href="#exams"
+                            class="footer-link"
+                        >
+                            Exam registration
+                        </a>
+
+                        <a
+                            href="#resources"
+                            class="footer-link"
+                        >
+                            Resources
+                        </a>
+
+                        <a
+                            href="#results"
+                            class="footer-link"
+                        >
+                            Results
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <h3 class="footer-heading">
+                        Information
+                    </h3>
+
+                    <div class="footer-links">
+
+                        <a
+                            href="#calendar"
+                            class="footer-link"
+                        >
+                            Academic calendar
+                        </a>
+
+                        <a
+                            href="#announcements"
+                            class="footer-link"
+                        >
+                            Announcements
+                        </a>
+
+                        <a
+                            href="#support"
+                            class="footer-link"
+                        >
+                            Student support
+                        </a>
+
+                        <a
+                            href="#faq"
+                            class="footer-link"
+                        >
+                            FAQs
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <h3 class="footer-heading">
+                        Account
+                    </h3>
+
+                    <div class="footer-links">
+
+                        <a
+                            href="#login"
+                            class="footer-link"
+                        >
+                            Log in
+                        </a>
+
+                        <a
+                            href="#signup"
+                            class="footer-link"
+                        >
+                            Create account
+                        </a>
+
+                        <a
+                            href="#privacy"
+                            class="footer-link"
+                        >
+                            Privacy
+                        </a>
+
+                        <a
+                            href="#terms"
+                            class="footer-link"
+                        >
+                            Terms
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © 2026 StudentHub. All rights reserved.
+                </span>
+
+
+                <div class="footer-socials">
+
+                    <a
+                        href="#linkedin"
+                        class="social-link"
+                        aria-label="LinkedIn"
+                    >
+                        <span class="material-symbols-rounded">
+                            business_center
+                        </span>
+                    </a>
+
+                    <a
+                        href="#instagram"
+                        class="social-link"
+                        aria-label="Instagram"
+                    >
+                        <span class="material-symbols-rounded">
+                            photo_camera
+                        </span>
+                    </a>
+
+                    <a
+                        href="#twitter"
+                        class="social-link"
+                        aria-label="Social media"
+                    >
+                        <span class="material-symbols-rounded">
+                            public
+                        </span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         BACK TO TOP
+         ===================================================== -->
+
+    <button
+        type="button"
+        class="back-to-top"
+        aria-label="Back to top"
+    >
+        <span class="material-symbols-rounded">
+            keyboard_arrow_up
+        </span>
+    </button>
+
+
+    <!-- Landing page interactions -->
+    <script
+        src="js/landing.js"
+        defer
+    ></script>
+
+</body>
+</html>
